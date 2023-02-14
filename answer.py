@@ -14,13 +14,14 @@ def print_all_lines(lines: list[str]) -> int:
         # Readlines includes the newline character
         latest_line = line.strip()
         last_number = int(latest_line)
-        print(latest_line)
+        #print(latest_line)
         if(last_number>0):
             sum+=last_number
         elif(line == -999):
             break
         else:
             continue
+    print(sum)
     return sum
 
 

@@ -6,7 +6,7 @@ Description: A sample of taking a filename from stdin, loading it into a string
 """
 
 ##changed print all lines to add all line and to return sum
-def print_all_lines(lines: list[str]) -> int:
+def print_all_lines(lines: list[str]) -> str:
     """ Print each line, then return the last one. """
     sum = 0
     latest_line = None
@@ -22,7 +22,7 @@ def print_all_lines(lines: list[str]) -> int:
         else:
             continue
     print(sum)
-    return sum
+    return latest_line
 
 
 if __name__ == "__main__":

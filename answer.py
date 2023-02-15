@@ -41,3 +41,5 @@ if __name__ == "__main__":
 
     # Actually do the work
     print_all_lines(lines)
+    ## call out function and print
+    print(addNumbers(lines))

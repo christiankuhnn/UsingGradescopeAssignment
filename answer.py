@@ -4,24 +4,30 @@ Updated: 2/13/2023
 Description: A sample of taking a filename from stdin, loading it into a string
              array, and printing out the first line.
 """
-
-##changed print all lines to add all line and to return sum
+def addNumbers(nums: list[int]):
+    i=1
+    temp=[]
+    if(len(nums)==0):
+        return None
+    for num in range(i,(len(nums))):
+        if(int(nums[i]==-999)):
+            break
+        elif(int(nums[i])<0):
+            i+=1
+        else:
+            temp.append(int(nums[i]))
+            i+=1
+    if(len(temp)==0):
+        return "EMPTY"
+    final = sum(temp)
+    return final
 def print_all_lines(lines: list[str]) -> str:
     """ Print each line, then return the last one. """
-    sum = 0
     latest_line = None
     for line in lines:
         # Readlines includes the newline character
         latest_line = line.strip()
-        last_number = int(latest_line)
-        print(last_number)
-        if(last_number>0):
-            sum+=last_number
-        elif(line == -999):
-            break
-        else:
-            continue
-    print(sum)
+        print(latest_line)
     return latest_line
 
 

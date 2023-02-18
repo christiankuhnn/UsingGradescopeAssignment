@@ -28,7 +28,7 @@ def print_all_lines(lines: list[str]) -> str:
         # Readlines includes the newline character
         latest_line = line.strip()
         print(latest_line)
-        return latest_line
+    return latest_line
 
 
 if __name__ == "__main__":

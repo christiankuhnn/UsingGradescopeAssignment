@@ -13,8 +13,12 @@ class TestLast(unittest.TestCase):
         actual = answer.addNumbers(["2\n", "-2\n", "3\n"])
         self.assertEqual(actual, 3)
         
+        actual = answer.addNumbers(["2\n", "-2\n", "-3\n"])
+        self.assertEqual(actual, "EMPTY")
+        
+        
         actual = answer.addNumbers(["2\n", "-999\n", "3\n"])
-        self.assertEqual(actual,None)
+        self.assertEqual(actual,"EMPTY")
     
     def test_handles_empty(self):
         actual = answer.print_all_lines([])

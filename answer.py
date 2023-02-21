@@ -10,6 +10,7 @@ def addNumbers(lines: list[str]):
         current_line = int(line)
         if current_line > 0:
             sum+=current_line
+        
         elif current_line == -999:
             break
     

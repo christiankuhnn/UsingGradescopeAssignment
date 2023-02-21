@@ -9,7 +9,7 @@ def addNumbers(lines: list[str]):
     inputs = []
     for line in lines:
         current_line = int(line)
-        inputs.push(line)
+        inputs.append(line)
         if current_line > 0:
             sum+=current_line
         

@@ -6,15 +6,18 @@ Description: A sample of taking a filename from stdin, loading it into a string
 """
 def addNumbers(lines: list[str]):
     sum = 0
+    inputs = []
     for line in lines:
         current_line = int(line)
+        inputs.push(line)
         if current_line > 0:
             sum+=current_line
         
         elif current_line == -999:
             break
     
-    return "EMPTY" if sum == 0 else sum
+    #return "EMPTY" if sum == 0 else sum
+    return inputs
                 
         
 

@@ -24,4 +24,5 @@ class TestLast(unittest.TestCase):
         actual = answer.print_all_lines([])
         self.assertEqual(actual, None)
         
-    
+if __name__ == '__main__':
+    unittest.main()   
